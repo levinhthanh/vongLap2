@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In dãy Fibonacci</title>
+</head>
+<body>
+    <script>
+        let chieuDai=+prompt('Nhập chiều dài dãy Fibonacci:');
+        let soFibo, tam, soPre, dem=0;
+        document.write('Dãy Fibonacci của bạn là: </br>');
+        for(soFibo=1,soPre=0 ; dem < chieuDai ;soFibo+=tam )
+        {
+            document.write(soFibo+' ');
+            tam=soPre;
+            soPre=soFibo;
+            dem+=1;   
+        }
+    </script>
+</body>
+</html>

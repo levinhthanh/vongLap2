@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính lãi ngân hàng</title>
+</head>
+<body>
+    <script>
+        let tienVay=+prompt('Nhập số tiền bạn vay:');
+        let thangVay=+prompt('Nhập số tháng bạn vay:');
+        let laiSuat=+prompt('Nhập lãi suất vay:');
+        let tienLai=0;
+        document.write('Số tiền bạn vay là = '+tienVay+'</br>');
+        document.write('Lãi suất hàng tháng là = '+laiSuat+'</br>');
+        document.write('Số tháng bạn vay là = '+thangVay+'</br>');
+        for(let i=0;i<thangVay;i++)
+        {
+            tienLai=tienVay*laiSuat;
+            tienVay=tienVay+tienLai;
+        }
+        document.write('Số tiền bạn phải trả là = '+tienVay);
+    </script>
+</body>
+</html>
