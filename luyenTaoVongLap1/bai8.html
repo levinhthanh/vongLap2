@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game đoán số</title>
+</head>
+<body>
+    <script>
+        let a=+prompt('Bạn muốn đoán trong khoảng từ? ');
+        let b=+prompt('đến? ');
+        let computer, user;
+        let ok=0;
+        do computer=Math.floor(Math.random()*1000);
+        while(computer<a||computer>b);
+        while(ok==0){
+            user=+prompt('Nhập số bạn đoán: ');
+            if(user>computer) alert('Lớn rồi! Giảm bớt nhé');
+            if(user<computer) alert('Nhỏ rồi! Tăng lên nhé');
+            if(user==computer) {alert('Bạn thật pro'); ok=1;}
+        }
+        
+    </script>
+</body>
+</html>

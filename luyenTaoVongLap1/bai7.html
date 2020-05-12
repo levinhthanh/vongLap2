@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizz Buzz</title>
+</head>
+<body>
+    <script>
+        let i,j,prt='' ;
+        for(i=1;i<101;i++){
+            if(i%3==0) {j='Fizz'; if(i%5==0) j='FizzBuzz';}
+            else if(i%5==0) j='Buzz'; 
+                 else j=i;
+            prt+=j+' * ';
+            
+        }
+        document.write(prt);
+    </script>
+</body>
+</html>
